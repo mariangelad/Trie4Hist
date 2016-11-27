@@ -1,0 +1,26 @@
+
+# delete the previous histogramms
+rm *hist
+# delete the previous plots
+rm istogrammi*.png
+
+
+#compile and run
+
+gcc  tree.c main.c main_functions.c array_list.c -lm -o  Trie4Hist  -Wall
+
+# launch as ' executable name  [nbins]    [directory]   [extension]'
+
+./Trie4Hist 50 ./data .dat
+
+
+
+# compile and run in debagger mode
+# gcc  tree.c main.c main_functions.c array_list.c -lm -o  Trie4Hist  -Wall -g
+# valgrind ./Trie4Hist 10 ./data .dat
+
+
+# run the octave script to print the histograms
+
+chmod u=rwx octavehisto.m
+./octavehisto.m
