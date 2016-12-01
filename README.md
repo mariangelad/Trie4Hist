@@ -24,7 +24,7 @@ You can change the directory and the extension of the input files, and the numbe
 ### Setting
 
 The files _alphabet.txt_ contains the list of the characters you want to include in the trie.
-The number of permitted characters sets the value of 'ALPHABET_SIZE': 
+The number of permitted characters sets the value of ALPHABET_SIZE: 
 
     #define ALPHABET_SIZE  54
 
